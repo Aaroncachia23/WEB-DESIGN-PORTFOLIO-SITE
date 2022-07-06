@@ -12,6 +12,14 @@ body {
     background-color: #5A38C7;
 }
 
+img,
+video,
+audio,
+iframe {
+    max-width: 100%;
+}
+
+
 
 /* -------------------- HEADINGS AND TYPE */
 
