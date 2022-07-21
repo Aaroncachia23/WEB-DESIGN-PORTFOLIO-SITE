@@ -86,38 +86,48 @@
       <p>Does the <a href="sms:0413889846">sms protocol</a> actually work?</p>
 
       <h2>Lists</h2>
-      <h4>Unordered list</h4>
-      <ul>
-        <li>List item with a much longer description or more content.</li>
-        <li>List item</li>
-        <li>
-          List item
+
+      <section class="lists">
+
+        <div class="unordered">
+          <h4>Unordered list</h4>
           <ul>
-            <li>Nested list item</li>
-            <li>Nested list item</li>
-            <li>Nested list item</li>
+            <li>List item with a much longer description or more content.</li>
+            <li>List item</li>
+            <li>
+              List item
+              <ul>
+                <li>Nested list item</li>
+                <li>Nested list item</li>
+                <li>Nested list item</li>
+              </ul>
+            </li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
           </ul>
-        </li>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item</li>
-      </ul>
-      <h3>Ordered list</h3>
-      <ol>
-        <li>List item with a much longer description or more content.</li>
-        <li>List item</li>
-        <li>
-          List item
+        </div>
+
+        <div class="ordered">
+          <h3>Ordered list</h3>
           <ol>
-            <li>Nested List Item</li>
-            <li>Nested List Item</li>
-            <li>Nested List Item</li>
+            <li>List item with a much longer description or more content.</li>
+            <li>List item</li>
+            <li>
+              List item
+              <ol>
+                <li>Nested List Item</li>
+                <li>Nested List Item</li>
+                <li>Nested List Item</li>
+              </ol>
+            </li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
           </ol>
-        </li>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item</li>
-      </ol>
+        </div>
+
+      </section>
 
 
       <h2>Details &amp; Summary</h2>
@@ -175,84 +185,105 @@
 
       <h3>Images</h3>
 
-      <h4>Image with wrong reference</h4>
 
-      <img src="wrongURL.jpg" alt="at least we have the alt text sorted">
+      <section class="images">
 
-      <h4>Normal sized image</h4>
+        <div class="bad image">
+          <h4>Incorrect Image</h4>
 
-      <img src="https://placekitten.com/480/480" alt="Image alt text" />
+          <img src="wrongURL.jpg" alt="at least we have the alt text sorted">
+        </div>
 
-      <h4>Wiiiiiide image</h4>
+        <div class="normal image">
+          <h4>Normal sized image</h4>
 
-      <img src="https://placekitten.com/2000/600" alt="Image alt text" />
+          <img src="https://placekitten.com/480/480" alt="Image alt text" />
+        </div>
 
-      <h2 class="">Embedded iFrames</h2>
+        <div class="wide image">
+          <h4>Wiiiiiide image</h4>
 
-      <h3>Google map iframe</h3>
+          <img src="https://placekitten.com/2000/600" alt="Image alt text" />
+        </div>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.91554037771!2d144.96327561584485!3d-37.81544724191384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b5b425f337%3A0x65ecd5727d3ee10b!2s250%20Collins%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1656204960281!5m2!1sen!2sau"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <h3>YouTube iframe</h3>
-
-
-      <iframe width="1120" height="630" src="https://www.youtube.com/embed/WFkIKd6md6g?start=206" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      <h2>Media</h2>
-
-      <h3>Audio</h3>
-
-      <p>We'll add a native audio file here at some stage</p>
-
-      <p>We'll add some native videos files here at some stage</p>
+      </section>
 
 
+      <h2>iFrames</h2>
+      <section class="iframes">
 
-      <h3>Video (no controls - for background)</h3>
+        <div class="maps">
+          <h3>Google map iframe</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.91554037771!2d144.96327561584485!3d-37.81544724191384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b5b425f337%3A0x65ecd5727d3ee10b!2s250%20Collins%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1656204960281!5m2!1sen!2sau"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="youtube">
+          <h3>YouTube iframe</h3>
+
+          <iframe width="1120" height="630" src="https://www.youtube.com/embed/WFkIKd6md6g?start=206" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+        </div>
+
+      </section>
 
 
+      <h2>Native Video</h2>
 
-      <h3>Video with controls</h3>
+      <video src="resources/Video/Placeholder Native Video.mp4" controls="true"
+        alt="This is a placeholder native video"></video>
 
+
+      <h3>Native Audio</h3>
+
+      <audio src="resources/Audio/Placeholder Audio.mp3" controls="true" alt="This is placeholder native audio"></audio>
 
 
       <h2>Some headings in semantic context</h2>
 
       <h1>My Favourite Places in Europe</h1>
 
+
       <p>Europe is a big place!</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <section class="europe">
 
-      <h2>France</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="france">
+          <h2>France</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <h3>Paris</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Paris</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <h3>Marseille</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Marseille</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
 
-      <h2>Italy</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="italy">
+          <h2>Italy</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <h3>Rome</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Rome</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <h3>Venice</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Venice</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
 
-      <h2>Spain</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="spain">
+          <h2>Spain</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <h3>Madrid</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Madrid</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <h3>Barcelona</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Barcelona</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+      </section>
   </main>
 
 </body>
