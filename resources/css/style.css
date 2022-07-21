@@ -1,5 +1,6 @@
 @import url("normalize.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Pirata+One&display=swap');
 
 
 /* -------------------- GLOBAL DEFAULTS */
@@ -9,7 +10,8 @@
 }
 
 body {
-    background-color: #5A38C7;
+    background-color: #0a0a0a;
+    font-family: 'IM Fell English SC', serif;
 }
 
 img,
@@ -20,7 +22,6 @@ iframe {
 }
 
 
-
 /* -------------------- HEADINGS AND TYPE */
 
 
@@ -28,21 +29,32 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+    color: white;
+    text-align: center;
+    font-family: 'Pirata One', cursive;
+    letter-spacing: 3px;
+}
+
+
 p,
 li,
 summary,
 cite,
-a {
+a,
+em,
+dfn,
+blockquote {
     color: white;
     text-align: center;
+    font-family: 'IM Fell English SC', serif;
 }
+
 
 
 /* -------------------- LAYOUTS */
 
 .layout-wide {
-    background-color: rgb(10, 10, 10);
 max-width: 1300px;
 margin-left: auto;
 margin-right: auto;
