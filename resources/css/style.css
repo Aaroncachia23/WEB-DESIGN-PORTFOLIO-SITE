@@ -14,10 +14,10 @@ body {
     text-align: center;
     font-family: 'IM Fell English SC', serif;
     line-height: 1.4;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     font-size: 22px;
-    background:url(../images/Purple\ Landscape.jpg) fixed center;
-    background-image:url(../images/Purple\ Landscape.jpg);
+    background:url(../images/Purple\ Landscape.png) fixed center;
+    background-image:url(../images/Purple\ Landscape.png);
     background-attachment:fixed;
     background-position:center;
     background-repeat: no-repeat;
@@ -94,8 +94,7 @@ li {
 /* -------------------- LAYOUTS */
 
 .layout-wide {
-    background-color: rgba(10, 10, 10, .9);
-    max-width: 3840px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding: 3%;  
