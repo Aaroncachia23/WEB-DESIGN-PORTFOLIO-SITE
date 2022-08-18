@@ -16,7 +16,7 @@ body {
     font-family: 'IM Fell English SC', serif;
     line-height: 1.4;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 img,
@@ -48,23 +48,23 @@ h5 {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 85px;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 70px;
 }
 
 h3 {
-    font-size: 34px;
+    font-size: 55px;
 }
 
 h4 {
-    font-size: 26px
+    font-size: 40px
 }
 
 h5 {
-    font-size: 20px
+    font-size: 35px
 }
 
 
