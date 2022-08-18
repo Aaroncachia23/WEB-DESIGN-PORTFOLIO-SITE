@@ -11,8 +11,12 @@
 
 body {
     background-color: #0a0a0a;
-    font-family: 'IM Fell English SC', serif;
     color: white;
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 img,
@@ -64,21 +68,6 @@ h5 {
 }
 
 
-p,
-summary,
-cite,
-em,
-dfn,
-blockquote,
-img {
-    color: white;
-    text-align: center;
-    font-family: 'IM Fell English SC', serif;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    font-size: 18px;
-}
-
 a {
     color: #AD91DD
 }
@@ -108,29 +97,20 @@ li {
 }
 
 @media screen and (min-width: 600px) {
-    .europe {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-    }
 
-    .images {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-    }
-    .iframes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px
-    }
-    .lists {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px
-    }
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px
+}
+
+}
 
 /* -------------------- HEADER */
 
