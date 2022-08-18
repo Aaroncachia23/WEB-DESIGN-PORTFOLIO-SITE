@@ -10,13 +10,18 @@
 }
 
 body {
-    background-color: #0a0a0a;
     color: white;
     text-align: center;
     font-family: 'IM Fell English SC', serif;
     line-height: 1.4;
     letter-spacing: 1px;
     font-size: 22px;
+    background:url(../images/Purple\ Landscape.jpg) fixed center;
+    background-image:url(../images/Purple\ Landscape.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 img,
@@ -31,7 +36,6 @@ iframe {
     border-width: 8px;
     border-color: #AD91DD;
 }
-
 
 /* -------------------- HEADINGS AND TYPE */
 
@@ -90,10 +94,11 @@ li {
 /* -------------------- LAYOUTS */
 
 .layout-wide {
-    max-width: 1000px;
+    background-color: rgba(10, 10, 10, .9);
+    max-width: 3840px;
     margin-left: auto;
     margin-right: auto;
-    padding: 3%
+    padding: 3%;  
 }
 
 @media screen and (min-width: 600px) {
