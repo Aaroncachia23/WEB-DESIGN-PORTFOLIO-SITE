@@ -39,6 +39,7 @@ iframe {
     border-color: #AD91DD;
 }
 
+
 /* ------------------- HEADINGS AND TYPE */
 
 
@@ -75,14 +76,14 @@ h5 {
 
 
 a {
-    padding: 7%;
+    padding: 3%;
     background-color: rgba(10, 10, 10, .7);
     border-radius: 10px;
     border-style: ridge;
     border-color: #AD91DD;
     border-width: 5px;
-    line-height: 1.8;
-    font-size: 32px;
+    line-height: 1;
+    font-size: 30px;
     color: #AD91DD
 }
 
@@ -120,6 +121,12 @@ li {
         padding: 3%;
     }
 
+    .four-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
     .three-col {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -133,10 +140,84 @@ li {
     }
 }
 
-/* -------------------- HEADER */
 
-/* -------------------- NAVIGATION */
+/* -------------------- QUICKVIEW */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(10, 10, 10, .5);
+    padding: 15px;
+    border-radius: 10px;
+    color: #AD91DD;
+}
+
+.modal,
+.modal2,
+.modal3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 1;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal2:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal3:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent,
+.modalcontent2,
+.modalcontent3 {
+    position: relative;
+    background: #AD91DD;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
+.modalclose,
+.modalclose2,
+.modalclose3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    text-decoration: none;
+    font-size: 36px;
+
+}
+
 
 /* -------------------- FOOTER */
 
-/* -------------------- MODULES */
+.home {
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    left: 0;
+}
