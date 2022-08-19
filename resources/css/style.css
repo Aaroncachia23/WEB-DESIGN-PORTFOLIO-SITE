@@ -76,7 +76,7 @@ h5 {
 
 
 a {
-    padding: 3%;
+    padding: 2%;
     background-color: rgba(10, 10, 10, .7);
     border-radius: 10px;
     border-style: ridge;
@@ -216,8 +216,9 @@ li {
 /* -------------------- FOOTER */
 
 .home {
+    padding: 0;
     position: fixed;
-    bottom: 10%;
+    bottom: 4.5%;
     right: 0;
     left: 0;
 }
